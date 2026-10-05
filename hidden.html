@@ -8,12 +8,14 @@
             p::first-line {
                 text-transform: uppercase;
             }
-            span {
+            input {
                 display: none;
-                user-select: none;
             }
-            span:active {
+            input:checked  {
                 display: inline;
+            }
+            label {
+                cursor: pointer;
             }
         </style>
     </head>
@@ -26,7 +28,7 @@
 
         <h1>Hidden Text</h1>
 
-        <p>Lorem <span>ipsum</span> dolor sit amet, consectetur adipiscing elit. Suspendisse ornare iaculis dolor, 
+        <p>Lorem <input>ipsum</span> dolor sit amet, consectetur adipiscing elit. Suspendisse ornare iaculis dolor, 
            in posuere augue. Donec sed vestibulum dolor. Nam nisi nulla, egestas id lectus sit amet, 
            varius tempor arcu. Donec auctor orci eu leo volutpat, sit amet cursus dolor pretium. Aenean 
            vulputate, ligula vitae interdum ornare, <span>augue</span> lectus scelerisque nulla, placerat cursus elit 
