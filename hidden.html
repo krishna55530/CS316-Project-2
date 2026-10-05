@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hidden Text</title>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            p::first-line {
+                text-transform: uppercase;
+            }
+            span {
+                display: none;
+                user-select: none;
+            }
+            span:active {
+                display: inline;
+            }
+        </style>
+    </head>
+    <body>
+        <header class ="top-bar">
+            <a href="index.html">Home</a>
+            <a href="image.html">Images</a>
+            <a href="hidden.html">Hidden Text</a>
+        </header>
+
+        <h1>Hidden Text</h1>
+
+        <p>Lorem <span>ipsum</span> dolor sit amet, consectetur adipiscing elit. Suspendisse ornare iaculis dolor, 
+           in posuere augue. Donec sed vestibulum dolor. Nam nisi nulla, egestas id lectus sit amet, 
+           varius tempor arcu. Donec auctor orci eu leo volutpat, sit amet cursus dolor pretium. Aenean 
+           vulputate, ligula vitae interdum ornare, <span>augue</span> lectus scelerisque nulla, placerat cursus elit 
+           dui eget velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+           curae; Aenean ac <span>hendrerit</span> dolor. Fusce at turpis at orci ultrices bibendum. Quisque dolor quam, 
+           efficitur vel sapien ac, vehicula lobortis odio. Donec lobortis pharetra arcu nec mollis. Vivamus 
+           maximus vestibulum malesuada. Nunc et tempus turpis.
+        </p>
+
+        <p>Sed fermentum a arcu nec consectetur. Aenean vestibulum sapien at diam consequat, eget blandit 
+           massa dignissim. Curabitur eget nisi sed massa <span>dapibus</span> hendrerit. Sed vulputate massa et venenatis 
+           placerat. Cras vulputate ullamcorper gravida. Donec sed nisi convallis augue ultricies convallis 
+           faucibus vitae justo. Donec nec gravida dolor, eleifend malesuada eros. Etiam id feugiat nunc. Sed 
+           elementum, sapien vitae <span>rhoncus</span> sagittis, sem erat iaculis massa, ac ultrices massa neque id tellus.
+        </p>
+    </body>
+</html>

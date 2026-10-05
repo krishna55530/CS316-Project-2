@@ -1,0 +1,25 @@
+body{
+    font-size:18px;
+    background-color: lightblue;
+}
+h1{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*top-bar*/
+.top-bar{
+    background-color: rgb(253, 255, 213);
+    padding: 10px;
+    text-align: justify;
+    position: fixed;   /* Keeps the bar in place during scroll */
+    top: 0;            /* Sticks it to the very top */
+    left: 0;           /* Sticks it to the left edge */
+    width: 100%;
+}
+a:link{
+    color:rgb(21, 255, 224);
+}
+
+a:visited{
+    color:rgb(49, 34, 92);
+}
