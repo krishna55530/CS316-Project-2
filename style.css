@@ -1,6 +1,8 @@
 body{
     font-size:18px;
     background-color: lightblue;
+    margin: 0;
+    padding: 70px 15px 15px;
 }
 h1{
     text-align: center;
@@ -23,8 +25,13 @@ a:visited{
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
+}
+.grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 .hidden {
     display: none;
