@@ -6,20 +6,30 @@ h1{
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/*top-bar*/
 .top-bar{
     background-color: rgb(253, 255, 213);
-    padding: 10px;
-    text-align: justify;
-    position: fixed;   /* Keeps the bar in place during scroll */
-    top: 0;            /* Sticks it to the very top */
-    left: 0;           /* Sticks it to the left edge */
+    padding: 12px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 a:link{
     color:rgb(21, 255, 224);
 }
-
 a:visited{
     color:rgb(49, 34, 92);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.hidden {
+    display: none;
+    user-select: none;
+}
+.hidden:active {
+    display: inline;
 }
